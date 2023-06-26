@@ -52,3 +52,5 @@ def rock_paper_scissors():
         if play_again[0].lower() != "y":
             playing = False
     print("Goodbye!")
+
+rock_paper_scissors()
