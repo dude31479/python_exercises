@@ -43,6 +43,8 @@ def rock_paper_scissors():
     while playing:
         player1 = input("Choose 1: Rock, Paper, or Scissors: ")
         player2 = random.choice(['rock', 'paper', 'scissors'])
+        print(f"Player two chose {player2}!")
+        input()
         winner = rpsWinner(player1, player2)
         if winner == 'tie':
             print("It's a tie!")
