@@ -35,4 +35,20 @@ assert rpsWinner('rock', 'rock') == 'tie'
 assert rpsWinner('paper', 'paper') == 'tie'
 assert rpsWinner('scissors', 'scissors') == 'tie'
 
-            
+import random
+def rock_paper_scissors():
+    playing = True
+    input("Hello! Let's play rock, paper, scissors!")
+    
+    while playing:
+        player1 = input("Choose 1: Rock, Paper, or Scissors: ")
+        player2 = random.choice(['rock', 'paper', 'scissors'])
+        winner = rpsWinner(player1, player2)
+        if winner == 'tie':
+            print("It's a tie!")
+        else:
+            print(f"{winner} wins!")
+        play_again = input("Would you like to play again?")
+        if play_again[0].lower() != "y":
+            playing = False
+    print("Goodbye!")
