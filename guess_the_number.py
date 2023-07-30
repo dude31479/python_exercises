@@ -16,4 +16,4 @@ for guesses in range(7):
 if guess == num:
     print("Good job! You guessed the number in {} attempts!".format(guesses))
 else:
-    print("Nope. The number I was thinking of was %s." % (num))
+    print("Nope. The number I was thinking of was {}.".format(num))
