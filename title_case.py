@@ -13,4 +13,10 @@ def getTitleCase(aString):
         result.append(newWord)
     return " ".join(result)
 
-print(getTitleCase('helLO, world!'))
+assert getTitleCase("Hello, world!") == 'Hello, World!'
+assert getTitleCase("heLLO") == 'Hello'
+assert getTitleCase("hello") == 'Hello'
+assert getTitleCase("") == ''
+assert getTitleCase('abc123xyz') == 'Abc123xyz'
+assert getTitleCase('cat dog RAT') == 'Cat Dog Rat'
+assert getTitleCase('cat,dog,RAT') == 'Cat,Dog,Rat'
